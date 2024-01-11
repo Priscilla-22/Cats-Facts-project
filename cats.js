@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const dogContainer = document.getElementById('dogContainer');
+    const dogContainer = document.getElementById('dogContainer');
+    const mainBody = document.body
 
+   const catFactsData = document.createElement('h1');
+   catFactsData.classList.add('top-heading');
+   catFactsData.textContent = 'CAT FACTS';
+    mainBody.appendChild(catFactsData);
+    
   const exampleImageUrls = [
     'https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D',
     'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D',
@@ -13,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch('https://cat-fact.herokuapp.com/facts')
     .then((response) => response.json())
     .then((data) => {
-      data.forEach((dog, index) => {
+        data.forEach((dog, index) => {
+
         const exampleImageUrl =
           exampleImageUrls[index % exampleImageUrls.length];
 
@@ -33,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 1; i <= 1; i++) {
           const factNum = document.createElement('h2');
           factNum.classList.add('fact-number');
-          factNum.textContent = `Fact ${index+1}`;
+          factNum.textContent = `Fact ${index + 1}`;
           cardContainer.appendChild(factNum);
         }
 

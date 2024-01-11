@@ -47,3 +47,14 @@ p {
     justify-content: center;
     margin: 10px;
 }
+
+.top-heading {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:35px;
+}
