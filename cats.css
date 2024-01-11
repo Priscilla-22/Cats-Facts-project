@@ -12,6 +12,7 @@ body {
 
 .card {
     width: 300px;
+    /* max-height:300px; */
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -20,11 +21,14 @@ body {
 
 .image-container {
     text-align: center;
+    /* height:300px; */
 }
 
 img {
+    height:300px;
     width: 100%;
-    height: auto;
+    /* max-height: 100%; */
+    object-fit: cover;
     border-bottom: 1px solid #ccc;
 }
 
