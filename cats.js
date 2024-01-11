@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D',
     'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdHN8ZW58MHx8MHx8fDA%3D',
   ];
+    
   // Fetch dog facts from the API
   fetch('https://cat-fact.herokuapp.com/facts')
     .then((response) => response.json())
