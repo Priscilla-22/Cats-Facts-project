@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         cardContainer.classList.add('card');
         cardContainer.appendChild(imgDiv);
 
-        // Create and append h2 elements for each fact
         for (let i = 1; i <= 1; i++) {
           const factNum = document.createElement('h2');
           factNum.classList.add('fact-number');
@@ -44,12 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
           cardContainer.appendChild(factNum);
         }
 
-        // Create and append the paragraph with dog facts
         const factElement = document.createElement('p');
         factElement.textContent = dog.text;
         cardContainer.appendChild(factElement);
 
-        // Append the card container to the dog container
         dogContainer.appendChild(cardContainer);
       });
     })
